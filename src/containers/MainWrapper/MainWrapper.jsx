@@ -111,7 +111,6 @@ function MainWrapper(props) {
   };
 
   useEffect(() => {
-    //console.log(page, "effect");
     setData([...data, ...countries.slice(start, end)]);
   }, [page]);
 
