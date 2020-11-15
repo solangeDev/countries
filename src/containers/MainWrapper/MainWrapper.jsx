@@ -90,7 +90,8 @@ function MainWrapper(props) {
         .then(function (response) {
           setSearcher({ ...searcher, options: response.data });
           setCountries(response.data);
-          setData(response.data.slice(start, end));
+          //setData(response.data.slice(start, end));
+          setData(response.data);
         })
         .catch(function (error) {
           console.log(error);
@@ -141,7 +142,7 @@ function MainWrapper(props) {
                   ></Searcher>
                 </div>
               </div>
-              <InfiniteScroll
+              {/* <InfiniteScroll
                 dataLength={countries.length}
                 next={nextPage}
                 hasMore={hasMore}
@@ -149,18 +150,18 @@ function MainWrapper(props) {
                   <h4 className={theme ? "MainWrapper__light-theme" : ""}>
                     Loading...
                   </h4>
-                }
+                } */}
               >
-                <div className="MainWrapper__wrapper">
-                  {data.map((row, index) => (
-                    <ItemCountry
-                      key={index}
-                      data={row}
-                      theme={theme}
-                    ></ItemCountry>
-                  ))}
-                </div>
-              </InfiniteScroll>
+              <div className="MainWrapper__wrapper">
+                {data.map((row, index) => (
+                  <ItemCountry
+                    key={index}
+                    data={row}
+                    theme={theme}
+                  ></ItemCountry>
+                ))}
+              </div>
+              {/* </InfiniteScroll> */}
             </Route>
             <Route
               path="/detail/:selectedCountry"

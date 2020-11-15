@@ -32,6 +32,9 @@
     padding: 25px 0 40px;
     flex-wrap: wrap;
   }
+  &__light-theme {
+    color: #f1f1f1 !important;
+  }
 }
 
 @media screen and (max-width: 714px) {
@@ -47,9 +50,6 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-    }
-    &__light-theme {
-      color: #f1f1f1 !important;
     }
   }
 }
