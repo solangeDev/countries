@@ -25,7 +25,7 @@
   }
 
   &__color-dark-wrapper {
-    background-color: #353b48 !important;
+    background-color: #2b3743 !important;
   }
 
   &__color-light {
@@ -78,6 +78,17 @@
       font-size: 13px;
       color: #909192;
       font-weight: 500;
+    }
+  }
+}
+
+@media screen and (max-width: 714px) {
+  .ItemCountry {
+    width: 240px;
+    &__image {
+      img {
+        height: 142px;
+      }
     }
   }
 }

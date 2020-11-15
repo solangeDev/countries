@@ -1,3 +1,9 @@
+@media screen and (max-width: 475px) {
+  .AutocompleteSearcher {
+    width: 100% !important;
+  }
+}
+
 .AutocompleteSearcher {
   width: 450px;
 
@@ -20,9 +26,9 @@
   &__root-dark {
     padding: 0 !important;
     margin: 0 !important;
-    background-color: #353b48;
+    background-color: #2b3743;
     svg {
-      color: #353b48 !important;
+      color: #2b3743 !important;
     }
     input {
       color: white !important;
@@ -70,7 +76,7 @@
   &__root-dark {
     padding: 0 !important;
     margin: 0 !important;
-    background-color: #353b48;
+    background-color: #2b3743;
     input {
       color: white !important;
       font-family: "Montserrat", sans-serif;

@@ -126,14 +126,14 @@ function MainWrapper(props) {
           <Switch>
             <Route exact path="/">
               <div className="MainWrapper__search-bar">
-                <div>
+                <div className="MainWrapper__w-searcher">
                   <Searcher
                     handleChange={handleChangeSearcher}
                     theme={theme}
                     data={searcher}
                   ></Searcher>
                 </div>
-                <div>
+                <div className={"MainWrapper__paddingTop"}>
                   <Searcher
                     handleChange={handleChangeRegion}
                     theme={theme}
@@ -145,12 +145,11 @@ function MainWrapper(props) {
                 dataLength={countries.length}
                 next={nextPage}
                 hasMore={hasMore}
-                loader={<h4>Loading...</h4>}
-                // endMessage={
-                //   <p style={{ textAlign: "center" }}>
-                //     <b>Yay! You have seen it all</b>
-                //   </p>
-                // }
+                loader={
+                  <h4 className={theme ? "MainWrapper__light-theme" : ""}>
+                    Loading...
+                  </h4>
+                }
               >
                 <div className="MainWrapper__wrapper">
                   {data.map((row, index) => (
@@ -165,7 +164,7 @@ function MainWrapper(props) {
             </Route>
             <Route
               path="/detail/:selectedCountry"
-              children={<ItemDetailCountry />}
+              children={<ItemDetailCountry theme={theme} />}
             ></Route>
           </Switch>
         </Router>
