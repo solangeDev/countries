@@ -1,0 +1,83 @@
+.ItemCountry {
+  width: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  cursor: pointer;
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #fbfbfb;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+    padding: 0 20px 20px;
+    box-shadow: 0 2px 5px 0 rgba(38, 38, 38, 0.2);
+  }
+
+  &__color-dark {
+    color: #1e2229;
+  }
+
+  &__color-dark-wrapper {
+    background-color: #353b48 !important;
+  }
+
+  &__color-light {
+    color: white !important;
+  }
+
+  &__dark {
+    background-color: #1e2229;
+  }
+
+  &__light {
+    background-color: white;
+  }
+
+  &__image {
+    width: 100%;
+    img {
+      width: 100%;
+      height: 92px;
+      border-top-left-radius: 3%;
+      border-top-right-radius: 3%;
+    }
+  }
+
+  &__title {
+    padding: 15px 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    color: #2f3640;
+  }
+
+  &__item-description {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 5px 0;
+    div:first-child {
+      font-weight: bold;
+      color: #2f3640;
+    }
+    div:last-child {
+      font-family: "Montserrat", sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-end;
+      font-size: 13px;
+      color: #909192;
+      font-weight: 500;
+    }
+  }
+}

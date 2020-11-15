@@ -1,0 +1,52 @@
+.Header {
+  &__container {
+    width: auto;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-out;
+  }
+
+  &__color-dark {
+    color: #1e2229;
+  }
+
+  &__color-light {
+    color: white;
+  }
+
+  &__dark {
+    background-color: #353b48;
+  }
+
+  &__light {
+    background-color: white;
+  }
+
+  &__title {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__btn-theme {
+    cursor: pointer;
+    padding: 15px 0 15px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 20px;
+    div:first-child {
+      padding-right: 10px;
+      font-size: 15px;
+    }
+    div:last-child {
+      font-weight: bold;
+      font-size: 15px;
+    }
+  }
+}

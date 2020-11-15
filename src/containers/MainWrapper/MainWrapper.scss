@@ -1,0 +1,34 @@
+.MainWrapper {
+  min-height: 100vh;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.5s ease-out;
+    padding: 0 30px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding-bottom: 25px;
+  }
+
+  &__theme-dark {
+    background-color: #1e2229;
+  }
+
+  &__theme-light {
+    background-color: #f1f1f1;
+  }
+
+  &__search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0 40px;
+  }
+}
